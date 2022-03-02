@@ -1,0 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Ubuntu', sans-serif;
+    color: #fff;
+    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6)), url('./pexels-daria-shevtsova-916335.jpg');
+    background-size: cover;
+    background-position: center center;
+    background-blend-mode:darken;
+    min-height:100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1 {
+    margin: 5rem;
+    font-size: 5rem;
+}
+
+.container {
+    margin: 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: space-around;
+    flex-flow: wrap;
+    gap: 10rem;
+}
+
+.date-control {
+    height: 10rem;
+    width: 10rem;
+    border-radius: 5%;
+    border: 0.2rem solid;
+    text-align: center;
+    transition: 0.8s;
+}
+
+.date-control p {
+    font-size: 2.2rem;
+}
+
+.date-control span {
+    align-self: center;
+    font-size: 1.5rem;
+}
+
+.date-control:hover {
+    width: 12rem;
+    height: 12rem;
+    color: #00754B;
+}
