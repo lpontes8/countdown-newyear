@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,29 +8,35 @@
     <link rel="stylesheet" href="./index.css">
     <title>Counter</title>
 </head>
-<body>
-    <h1>New Year Countdown</h1>
 
-    <div class="container">
-        <div class="date-control">
-            <p class="date-text" id="days"></p>
-            <span>Days</span>
+<body>
+    <div id="shadow">
+        <header>
+            <h1 id="logo">New Year Countdown</h1>
+            <button id="theme-button">Dracule Theme <img src="./images/dark.svg" alt="dark theme icon"></button>
+        </header>
+        <div class="container">
+            <div class="date-control">
+                <p class="date-text" id="days"></p>
+                <span>Days</span>
+            </div>
+            <div class="date-control">
+                <p class="date-text" id="hours"></p>
+                <span>Hours</span>
+            </div>
+            <div class="date-control">
+                <p class="date-text" id="minutes"></p>
+                <span>Minutes</span>
+            </div>
+            <div class="date-control">
+                <p class="date-text" id="seconds"></p>
+                <span>Seconds</span>
+            </div>
         </div>
-        <div class="date-control">
-            <p class="date-text" id="hours"></p>
-            <span>Hours</span>
-        </div>
-        <div class="date-control">
-            <p class="date-text" id="minutes"></p>
-            <span>Minutes</span>
-        </div>
-        <div class="date-control">
-            <p class="date-text" id="seconds"></p>
-            <span>Seconds</span>
-        </div>
+
     </div>
 
     <script src="index.js"></script>
 </body>
-<!--Image src: https://www.pexels.com/pt-br/foto/notebook-macbook-air-ao-lado-e-camera-916335/-->
+
 </html>

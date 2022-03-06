@@ -1,45 +1,61 @@
 @import url('https://fonts.googleapis.com/css2?family=Ubuntu&display=swap');
 
 * {
+    margin: 0;
+    padding: 0;
     box-sizing: border-box;
 }
 
 body {
-    margin: 0;
     font-family: 'Ubuntu', sans-serif;
     color: #fff;
-    background: linear-gradient(rgba(0,0,0,0.8), rgba(0,0,0,0.6)), url('./pexels-daria-shevtsova-916335.jpg');
+    background-image: url('./images/pexels-daria-shevtsova-916335.jpg');
     background-size: cover;
     background-position: center center;
-    background-blend-mode:darken;
-    min-height:100vh;
+    min-height: 100vh;
+}
+
+#shadow {
+    background: rgba(0, 0, 0, 0.5);
+    height: 100vh;
+    width: 100%;
+}
+
+header,
+.container {
+    padding: 3rem;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
+    flex-flow: wrap;
+    justify-content: space-between;
     align-items: center;
 }
 
-h1 {
-    margin: 5rem;
-    font-size: 5rem;
+header button {
+    color: #fff;
+    height: fit-content;
+    align-content: center;
+    align-self: center;
+    padding: 0.3rem 1rem;
+    border-radius: 10rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    box-shadow: 0.1rem 0.1rem 0.1rem rgba(149, 128, 255, 0.8);
 }
 
 .container {
-    margin: 5rem;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-content: space-around;
-    flex-flow: wrap;
-    gap: 10rem;
+    margin: 2rem;
 }
 
 .date-control {
+    display: flex;
+    flex-direction: column;
+    border: 0.2rem solid;
+    justify-content: center;
+    align-items: center;
     height: 10rem;
     width: 10rem;
+    font-weight: bolder;
     border-radius: 5%;
-    border: 0.2rem solid;
-    text-align: center;
-    transition: 0.8s;
 }
 
 .date-control p {
@@ -52,7 +68,7 @@ h1 {
 }
 
 .date-control:hover {
-    width: 12rem;
-    height: 12rem;
-    color: #00754B;
+    background-color: rgba(0, 0, 0, 0.2);
+    width: 11rem;
+    height: 11rem;
 }
